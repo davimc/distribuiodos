@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/Bootstrap/compiler/style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-gradient-primary">
+      <div class="container ">
+      <a href="index.html" class="navbar-brand">Veículos</a>
+    </div>
+    </nav>
+    <div class="panel text-center">
+      <h1 class="estiloh1">Cadastro</h1>
+    </div>
+    <div class="panel panel-body">
+      <div class="alert alert-danger alert-dismissible fade in" id="error" role="alert" style="display:none">
+        <button id="btnClose" type="button" class="close" name="button">x</button>Preencha os campos corretamente
+      </div>
+      <div class="alert alert-success alert-dismissible fade in" id="sucesso" role="alert" style="display:none">
+        <button id="btnClose-sucesso" type="button" class="close" name="button">x</button>
+      </div>
+    </div>
+    <form method="PUT" style="margin:10px" id="myform">
+
+        <div class="form-group">
+          <fieldset>
+            <div class="form-group">
+              <label>Modelo</label>
+              <input type="text" class="form-control" id="modelo" min="4">
+            </div>
+            <br>
+            <div class="form-group">
+              <label>Placa</label>
+              <input type="text" class="form-control" id="placa" min="4">
+            </div>
+            <br>
+            <div class="form-group">
+              <label>Ano</label>
+              <input type="text" class="form-control" id="ano" min="4">
+            </div>
+            <br>
+            <div class="form-group">
+              <label>Cor</label>
+              <input type="text" class="form-control" id="cor" min="4">
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-group col-md-2 col-sm-2">
+                <div id="botaoCadastro" class="btn btn-success">
+                  <i class="glyphicon glyphicon-floppy-disk"></i>
+                  Cadastrar
+                </div>
+              </div>
+              <div class="form-group col-md-2 col-sm-2">
+                <div id="botaoLimpar" class="btn btn-success">
+                  <i class="glyphicon glyphicon-erase"></i>
+                    Limpar
+                </div>
+              </div>
+            </div>
+            <div class="form-group text-right">
+
+            </div>
+          </fieldset>
+        </div>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/cadastraCarro.js">
+
+    </script>
+  </body>
+</html>
